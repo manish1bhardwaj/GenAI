@@ -1,0 +1,8 @@
+langchain-huggingface
+langchain-openai
+langchain-anthropic
+numpy
+scikit-learn
+python-dotenv
+ipykernel
+sentence-transformers
