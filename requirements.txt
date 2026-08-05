@@ -7,3 +7,4 @@ python-dotenv
 ipykernel
 sentence-transformers
 streamlit
+dotenv
