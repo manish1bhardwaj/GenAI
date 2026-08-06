@@ -8,3 +8,4 @@ ipykernel
 sentence-transformers
 streamlit
 dotenv
+langchain
