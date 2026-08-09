@@ -11,12 +11,12 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-template1 = PromptTemplate(
+prompt1 = PromptTemplate(
     template = "generate a short paragraph on this {topic}",
     input_variables=["topic"]
 )
 
-template2 = PromptTemplate(
+prompt2 = PromptTemplate(
     template="Summazire the following /n{text} in 5 points with neat and clean structure",
     input_variables=['text']
 )
@@ -24,7 +24,7 @@ template2 = PromptTemplate(
 
 parser = StrOutputParser()
 
-chain = template1|model|template2|model|parser
+chain = prompt1|model|prompt2|model|parser
 result = chain.invoke({"topic":"Covid19"})
 
 print(result)
