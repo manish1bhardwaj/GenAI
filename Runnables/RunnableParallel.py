@@ -23,7 +23,7 @@ prompt1 = PromptTemplate(
     input_variables=["topic"]
 )
 prompt2 = PromptTemplate(
-    template="generate a Linkedin Post about-{topic}",
+    template="generate a Linkedin Post on the following tweet-{topic}",
     input_variables=["topic"]
 )
 
